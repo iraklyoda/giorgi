@@ -4,6 +4,10 @@ const countElement = document.querySelector('#count');
 const before = document.querySelector('#one')
 const after = document.querySelector('#two');
 
+window.dataLayer.push({
+  'character': 'Giorgi',
+})
+
 before.addEventListener('click', () => {
   count++;
   before.classList.add('none');
